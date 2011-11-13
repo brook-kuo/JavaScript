@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Canvas/Simple shapes (rectangles)</title>
+    </head>
+<body>
+    <canvas id="myCanvas" width="300" height="150">
+    Fallback content, in case the browser does not support Canvas.
+    </canvas>
+    <script type="application/x-javascript">
+        // Get a reference to the element.
+        var elem = document.getElementById('myCanvas');
+
+        // 判斷是否能取得context
+        if (elem && elem.getContext) {
+            // 你只能對每一個canvas做initialize一次(getContext).
+            // context = canvas . getContext(contextId [, ... ])
+            var context = elem.getContext('2d');
+            if (context) {
+                // context.fillRect(x, y, w, h)
+                // 畫方形
+                context.fillRect(0, 0, 150, 100);
+
+                // context.clearRect(x, y, w, h)
+                // 清方形
+                context.clearRect(100,50, 50, 50);
+
+                // context.strokeRect(x, y, w, h)
+                // 畫框
+                context.strokeRect(150,100, 50, 50);
+            }
+        }
+    </script>
+</body>
+</html>
+
