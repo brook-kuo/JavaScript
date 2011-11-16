@@ -1,4 +1,4 @@
-<html>
+﻿<html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Canvas/FillRect attribute</title>
@@ -18,19 +18,19 @@
             var context = elem.getContext('2d');
             if (context) {
                 context.fillStyle = 'pink';
-                context.fillRect(0, 0, 10, 10);
+                context.fillRect(0, 0, 50, 50);
 
                 context.fillStyle = '#f00'; // red
-                context.fillRect(10, 10, 10, 10);
+                context.fillRect(50, 50, 50, 50);
                 context.fillStyle = '#0f0'; // green
-                context.fillRect(20, 20, 10, 10);
+                context.fillRect(100, 100, 50, 50);
                 context.fillStyle = '#00f'; // blue
-                context.fillRect(30, 30, 10, 10);
+                context.fillRect(150, 150, 50, 50);
 
                 // RGBA(red, green, blue, alpha)
                 // Alpha1是透明度
-                context.fillStyle = 'RGBA(200, 200, 255, 0.2)';
-                context.fillRect(10, 10, 30, 30);
+                context.fillStyle = 'RGBA(100, 100, 255, 0.2)';
+                context.fillRect(50, 50, 150, 150);
             }
         }
     </script>

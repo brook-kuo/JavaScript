@@ -1,4 +1,4 @@
-<html>
+﻿<html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Canvas/Line styles</title>
@@ -17,6 +17,10 @@
             // context = canvas . getContext(contextId [, ... ])
             var context = elem.getContext('2d');
             if (context) {
+                // The beginPath() starts a new path
+                context.beginPath();
+                // reset the path to (0, 0)
+                context.moveTo(0, 0);
                 context.strokeStyle = '#f00';
 
                 // lineWidth是線的大小
